@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing Saúde Suplementar | IAzis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); }
+        .card { transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-header text-white py-8 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="text-3xl">🏥</span>
+                <h1 class="text-2xl md:text-3xl font-bold">Briefing Saúde Suplementar</h1>
+            </div>
+            <p class="text-blue-100 text-sm md:text-base">Curadoria diária para executivos do setor de saúde</p>
+            <p class="text-blue-200 text-xs mt-2">Powered by 🐺 Lobo AI</p>
+        </div>
+    </header>
+
+    <!-- Indicadores -->
+    <section class="max-w-5xl mx-auto px-4 -mt-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl shadow-lg p-4 card">
+                <p class="text-xs text-gray-500 uppercase tracking-wide">RDOR3</p>
+                <p class="text-2xl font-bold text-green-600">R$ 41,90</p>
+                <p class="text-xs text-green-500">+51,38% (12m)</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-4 card">
+                <p class="text-xs text-gray-500 uppercase tracking-wide">Beneficiários</p>
+                <p class="text-2xl font-bold text-blue-600">53,18M</p>
+                <p class="text-xs text-green-500">+1,9% a.a.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-4 card">
+                <p class="text-xs text-gray-500 uppercase tracking-wide">Sinistralidade</p>
+                <p class="text-2xl font-bold text-orange-500">~85%</p>
+                <p class="text-xs text-gray-400">Média setor</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-4 card">
+                <p class="text-xs text-gray-500 uppercase tracking-wide">Processos/Ano</p>
+                <p class="text-2xl font-bold text-red-500">460K</p>
+                <p class="text-xs text-gray-400">Judicialização</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gráfico de Beneficiários -->
+    <section class="max-w-5xl mx-auto px-4 mt-8">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">📈 Evolução de Beneficiários (milhões)</h2>
+            <canvas id="beneficiariosChart" height="120"></canvas>
+        </div>
+    </section>
+
+    <!-- Briefings -->
+    <section class="max-w-5xl mx-auto px-4 mt-8 pb-12">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">📰 Últimos Briefings</h2>
+        
+        <!-- 07/02 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card">
+            <div class="flex items-center justify-between mb-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">07/02/2026</span>
+                <span class="text-xs text-gray-400">Sexta-feira</span>
+            </div>
+            <h3 class="font-semibold text-gray-800 mb-3">Mercado & ANS</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Setor atinge <strong>53,18 milhões</strong> de beneficiários em dez/25 (+1,9% a.a.)</li>
+                <li>• Planos de saúde ganharam <strong>1,2 milhão</strong> de clientes em 2025</li>
+            </ul>
+            <h3 class="font-semibold text-gray-800 mt-4 mb-3">Operadoras — Análise BTG</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• <span class="text-green-600 font-medium">SulAmérica:</span> +32 mil vidas em dezembro, +300 mil no ano</li>
+                <li>• <span class="text-green-600 font-medium">Porto Saúde:</span> crescimento sólido no trimestre</li>
+                <li>• <span class="text-red-500 font-medium">Hapvida:</span> perdeu clientes no período</li>
+            </ul>
+            <h3 class="font-semibold text-gray-800 mt-4 mb-3">Healthtech & M&A</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Investimento em healthtech volta a crescer em 2025</li>
+                <li>• BR Partners antecipa retomada de M&A no 1º semestre de 2026</li>
+            </ul>
+        </div>
+
+        <!-- 06/02 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card">
+            <div class="flex items-center justify-between mb-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">06/02/2026</span>
+                <span class="text-xs text-gray-400">Quinta-feira</span>
+            </div>
+            <h3 class="font-semibold text-gray-800 mb-3">Regulação e Política</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Grupo Amil adere ao "Agora Tem Especialistas" — 1.000 cirurgias de alta complexidade para o SUS no RJ</li>
+                <li>• ANS e MS lançam novo edital para troca de débitos por atendimento SUS</li>
+                <li>• Rede D'Or, Hapvida e Grupo Athenas já participam do programa</li>
+            </ul>
+            <h3 class="font-semibold text-gray-800 mt-4 mb-3">Movimentos de Mercado</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• <strong>SulAmérica</strong> inicia ofensiva no interior — 160 novos prestadores em Goiânia</li>
+                <li>• <strong>Rede D'Or</strong> incorpora Hospital Glória D'Or à Atlântica D'Or</li>
+                <li>• Investimento de <strong>R$ 8M</strong> em nova UTI no Hospital São Luiz Jabaquara</li>
+            </ul>
+        </div>
+
+        <!-- 05/02 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card">
+            <div class="flex items-center justify-between mb-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">05/02/2026</span>
+                <span class="text-xs text-gray-400">Quarta-feira</span>
+            </div>
+            <h3 class="font-semibold text-gray-800 mb-3">Operadoras & Mercado</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• SulAmérica avança sobre reduto da Unimed no interior</li>
+                <li>• Rede D'Or incorpora Hospital Glória D'Or à Atlântica D'Or</li>
+                <li>• Nova UTI de alta complexidade: R$ 8M em SP</li>
+            </ul>
+            <h3 class="font-semibold text-gray-800 mt-4 mb-3">Regulação & ANS</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Nova Agenda Regulatória ANS 2026-2028 aposta em tecnologia</li>
+                <li>• STF analisa ADI 7.265 sobre procedimentos fora do Rol</li>
+            </ul>
+            <h3 class="font-semibold text-gray-800 mt-4 mb-3">Judicialização</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Migalhas alerta para aumento vigoroso de demandas judiciais</li>
+                <li>• CNJ aponta Judiciário pró-direito à saúde com altas taxas de liminares</li>
+            </ul>
+        </div>
+
+        <!-- 04/02 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card">
+            <div class="flex items-center justify-between mb-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">04/02/2026</span>
+                <span class="text-xs text-gray-400">Terça-feira</span>
+            </div>
+            <h3 class="font-semibold text-gray-800 mb-3">Destaques</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Agenda Regulatória ANS 2026-2028 — foco em tecnologia e transformação digital</li>
+                <li>• Planos devem se preparar para envelhecimento populacional</li>
+                <li>• Reajustes 2026 — cenário de incerteza, monitorar VCMH</li>
+                <li>• Ministério da Saúde: 3 mil novas vagas de residência médica</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>🐺 Curadoria automática por <strong class="text-white">Lobo AI</strong></p>
+            <p class="mt-1">Fontes: ANS, Folha, Veja, Migalhas, Medicina S/A, BTG, InfoMoney</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gráfico de Beneficiários
+        const ctx = document.getElementById('beneficiariosChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan/25', 'Fev/25', 'Mar/25', 'Abr/25', 'Mai/25', 'Jun/25', 'Jul/25', 'Ago/25', 'Set/25', 'Out/25', 'Nov/25', 'Dez/25'],
+                datasets: [{
+                    label: 'Beneficiários (milhões)',
+                    data: [51.8, 51.9, 52.0, 52.2, 52.4, 52.5, 52.7, 52.8, 53.0, 53.0, 53.1, 53.18],
+                    borderColor: '#2563eb',
+                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#2563eb'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        min: 50,
+                        max: 55,
+                        ticks: {
+                            callback: function(value) { return value + 'M'; }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
