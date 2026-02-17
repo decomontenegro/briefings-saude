@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognóstico Estratégico — Saúde Suplementar 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); }
+        .card { transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .debate-card { border-left: 4px solid; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-header text-white py-8 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="text-3xl">📊</span>
+                <h1 class="text-2xl md:text-3xl font-bold">Prognóstico Estratégico</h1>
+            </div>
+            <p class="text-blue-100 text-lg">Saúde Suplementar 2026 — Perspectiva Rede D'Or</p>
+            <p class="text-blue-200 text-xs mt-2">Análise baseada nos briefings diários | 🐺 Lobo AI</p>
+        </div>
+    </header>
+
+    <!-- Síntese -->
+    <section class="max-w-5xl mx-auto px-4 -mt-6">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">🎯 Síntese Executiva</h2>
+            <p class="text-gray-600 mb-4">O mercado de saúde suplementar brasileiro atravessa um momento de <strong>inflexão estrutural</strong>. Com 53,2 milhões de beneficiários e receitas recordes, o setor enfrenta simultaneamente:</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-red-50 rounded-lg p-4 text-center">
+                    <p class="text-2xl font-bold text-red-600">460K</p>
+                    <p class="text-xs text-red-700">processos/ano</p>
+                </div>
+                <div class="bg-orange-50 rounded-lg p-4 text-center">
+                    <p class="text-2xl font-bold text-orange-600">~85%</p>
+                    <p class="text-xs text-orange-700">sinistralidade</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4 text-center">
+                    <p class="text-2xl font-bold text-green-600">53,2M</p>
+                    <p class="text-xs text-green-700">beneficiários</p>
+                </div>
+                <div class="bg-blue-50 rounded-lg p-4 text-center">
+                    <p class="text-2xl font-bold text-blue-600">+2,2%</p>
+                    <p class="text-xs text-blue-700">crescimento a.a.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Os 7 Grandes Debates -->
+    <section class="max-w-5xl mx-auto px-4 mt-8">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">🔥 Os 7 Grandes Debates do Setor</h2>
+        
+        <!-- Debate 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-red-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">1. Judicialização — A Bomba-Relógio</h3>
+                <span class="bg-red-100 text-red-800 text-xs font-medium px-3 py-1 rounded-full">CRÍTICO</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• 1 ação judicial a cada 42 segundos contra planos</li>
+                <li>• STF definirá limites para terapias (Tema 1.295) em 2026</li>
+                <li>• Judiciário historicamente pró-consumidor</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Verticalização reduz fricção</span>
+                <span class="text-red-600">⚠️ Custos imprevisíveis</span>
+            </div>
+        </div>
+
+        <!-- Debate 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-orange-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">2. Nova Fiscalização ANS</h3>
+                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1 rounded-full">MAIO/2026</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• Nova norma entra em vigor em 1º de maio de 2026</li>
+                <li>• ANS pode suspender planos com má gestão</li>
+                <li>• Foco em atendimento e governança de dados</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Rede D'Or bem preparada</span>
+                <span class="text-green-600">✅ Concorrentes podem perder share</span>
+            </div>
+        </div>
+
+        <!-- Debate 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-green-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">3. Complementaridade Público-Privada</h3>
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">OPORTUNIDADE</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• Programa "Agora Tem Especialistas" — R$ 200M ao SUS</li>
+                <li>• 40 hospitais privados em 13 estados</li>
+                <li>• Rede D'Or, Hapvida, Amil e Athenas já aderiram</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Receita adicional</span>
+                <span class="text-green-600">✅ Posicionamento institucional</span>
+            </div>
+        </div>
+
+        <!-- Debate 4 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-blue-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">4. Transformação Digital e IA</h3>
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">ESTRATÉGICO</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• WhatsApp como canal principal de acesso</li>
+                <li>• Hiperpersonalização via dados e IA</li>
+                <li>• Modelos híbridos (digital + presencial)</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Estratégia "figital" já implementada</span>
+                <span class="text-green-600">✅ Dados integrados = vantagem</span>
+            </div>
+        </div>
+
+        <!-- Debate 5 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-yellow-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">5. Sustentabilidade Financeira</h3>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">PRESSÃO</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• Sinistralidade ~85-90% em todo o setor</li>
+                <li>• Reajustes de 15-25% em 2026</li>
+                <li>• Fraudes: R$ 28 bilhões/ano</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Verticalização controla custos</span>
+                <span class="text-red-600">⚠️ Reajustes podem reduzir base</span>
+            </div>
+        </div>
+
+        <!-- Debate 6 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-purple-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">6. Envelhecimento Populacional</h3>
+                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">LONGO PRAZO</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• Brasil envelhece — pressão sobre custos</li>
+                <li>• Debate sobre subsídios fiscais</li>
+                <li>• Migração para modelo preventivo necessária</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Alta complexidade é core business</span>
+                <span class="text-green-600">✅ Pode liderar modelo de valor</span>
+            </div>
+        </div>
+
+        <!-- Debate 7 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 card debate-card border-indigo-500">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gray-800">7. M&A e Consolidação</h3>
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full">OPORTUNIDADE</span>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• 1º semestre forte em fusões previsto</li>
+                <li>• Hapvida em crise = oportunidade</li>
+                <li>• SulAmérica avança sobre território Unimed</li>
+            </ul>
+            <div class="flex gap-4 text-xs">
+                <span class="text-green-600">✅ Balanço sólido para aquisições</span>
+                <span class="text-green-600">✅ Compradora natural no setor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cenários -->
+    <section class="max-w-5xl mx-auto px-4 mt-8">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">🎲 Cenários 2026-2027</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-2xl">🌟</span>
+                    <div>
+                        <h3 class="font-bold text-green-800">Otimista</h3>
+                        <p class="text-xs text-green-600">30% probabilidade</p>
+                    </div>
+                </div>
+                <ul class="text-sm text-green-700 space-y-1">
+                    <li>• Judicialização estabiliza</li>
+                    <li>• IA reduz custos 10%+</li>
+                    <li>• Rede D'Or ganha 5%+ share</li>
+                </ul>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-2xl">📊</span>
+                    <div>
+                        <h3 class="font-bold text-blue-800">Base</h3>
+                        <p class="text-xs text-blue-600">50% probabilidade</p>
+                    </div>
+                </div>
+                <ul class="text-sm text-blue-700 space-y-1">
+                    <li>• Crescimento 2-3% a.a.</li>
+                    <li>• Pressão de custos administrável</li>
+                    <li>• Consolidação moderada</li>
+                </ul>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-2xl">⚠️</span>
+                    <div>
+                        <h3 class="font-bold text-red-800">Pessimista</h3>
+                        <p class="text-xs text-red-600">20% probabilidade</p>
+                    </div>
+                </div>
+                <ul class="text-sm text-red-700 space-y-1">
+                    <li>• Regulação impõe custos</li>
+                    <li>• Crise reduz beneficiários</li>
+                    <li>• Margens comprimidas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recomendações -->
+    <section class="max-w-5xl mx-auto px-4 mt-8 pb-12">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">🎯 Recomendações Estratégicas</h2>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">2026</span>
+                        Curto Prazo
+                    </h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Acelerar digitalização (WhatsApp + IA)</li>
+                        <li>✓ Expandir programa SUS</li>
+                        <li>✓ Monitorar oportunidades Hapvida</li>
+                        <li>✓ Preparar nova fiscalização ANS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">2027-28</span>
+                        Médio Prazo
+                    </h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Liderar interoperabilidade</li>
+                        <li>✓ Expandir no interior via SulAmérica</li>
+                        <li>✓ Desenvolver modelos de valor</li>
+                        <li>✓ M&A seletivo</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">2029+</span>
+                        Longo Prazo
+                    </h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Posicionar para envelhecimento</li>
+                        <li>✓ Influenciar regulação</li>
+                        <li>✓ Expansão América Latina</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>🐺 Análise elaborada por <strong class="text-white">Lobo AI</strong> | Atualizado em 17/02/2026</p>
+            <p class="mt-1">Baseado nos briefings diários e pesquisa de mercado</p>
+        </div>
+    </footer>
+</body>
+</html>
