@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing Frankfurt — Pablo Meneses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-header { background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%); }
+        .card { transition: transform 0.2s; }
+        .card:hover { transform: translateY(-2px); }
+        .quote { border-left: 4px solid #3182ce; background: #ebf8ff; }
+        @media print { .no-print { display: none; } }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="gradient-header text-white py-6 px-4">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-blue-200 text-sm mb-1">BRIEFING EXECUTIVO</p>
+            <h1 class="text-2xl md:text-3xl font-bold">Pablo Meneses — Frankfurt 2026</h1>
+            <p class="text-blue-100 mt-2">IA, Financiamento Sustentável e Governança na Saúde</p>
+            <p class="text-blue-200 text-sm mt-1">📍 Universidade de Frankfurt | 📅 2-5 Março</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        
+        <!-- Painel -->
+        <section class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">👥 Seu Painel</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">TA</div>
+                    <div>
+                        <p class="font-medium text-gray-800">Tedros Adhanom</p>
+                        <p class="text-xs text-gray-500">Diretor-Geral da OMS</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">AP</div>
+                    <div>
+                        <p class="font-medium text-gray-800">Alexandre Padilha</p>
+                        <p class="text-xs text-gray-500">Ministro da Saúde do Brasil</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-bold">KL</div>
+                    <div>
+                        <p class="font-medium text-gray-800">Karl Lauterbach</p>
+                        <p class="text-xs text-gray-500">Ex-Min. Saúde Alemanha</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold">SK</div>
+                    <div>
+                        <p class="font-medium text-gray-800">Sidney Klajner</p>
+                        <p class="text-xs text-gray-500">Presidente Albert Einstein</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                <p class="text-sm text-blue-800"><strong>Seu diferencial:</strong> Representa o maior ecossistema privado de saúde da América Latina, com modelo verticalizado único (hospitais + operadora + tecnologia).</p>
+            </div>
+        </section>
+
+        <!-- Talking Points -->
+        <section class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">🎤 Talking Points</h2>
+            
+            <div class="space-y-6">
+                <!-- Point 1 -->
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">1. Abertura — Posicionar a Rede D'Or</h3>
+                    <div class="quote p-4 rounded-r-lg italic text-gray-700">
+                        "A Rede D'Or é o maior sistema integrado de saúde da América Latina — 69 hospitais, 50 mil leitos, 53 milhões de beneficiários via SulAmérica. Essa escala nos permite não apenas implementar IA, mas validá-la clinicamente com a maior base de dados de saúde do hemisfério sul."
+                    </div>
+                    <div class="mt-3 grid grid-cols-4 gap-2 text-center">
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-xl font-bold text-blue-600">69+</p>
+                            <p class="text-xs text-gray-500">hospitais</p>
+                        </div>
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-xl font-bold text-blue-600">50K</p>
+                            <p class="text-xs text-gray-500">leitos</p>
+                        </div>
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-xl font-bold text-blue-600">53M</p>
+                            <p class="text-xs text-gray-500">beneficiários</p>
+                        </div>
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-xl font-bold text-blue-600">100K</p>
+                            <p class="text-xs text-gray-500">downloads app</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">2. IA na Prática — O que já fazemos</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="text-left p-2">Solução</th>
+                                    <th class="text-left p-2">Status</th>
+                                    <th class="text-left p-2">Resultado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b"><td class="p-2">App Rede D'Or</td><td class="p-2"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Live</span></td><td class="p-2">100K downloads em 10 dias</td></tr>
+                                <tr class="border-b"><td class="p-2">Dora (assistente IA)</td><td class="p-2"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Live</span></td><td class="p-2">Agendamentos automatizados</td></tr>
+                                <tr class="border-b"><td class="p-2">Patologia Digital</td><td class="p-2"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Live</span></td><td class="p-2">Diagnóstico por imagem</td></tr>
+                                <tr class="border-b"><td class="p-2">Estratégia Figital</td><td class="p-2"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Em escala</span></td><td class="p-2">Integração digital + físico</td></tr>
+                                <tr><td class="p-2">Plataforma unificada</td><td class="p-2"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Live</span></td><td class="p-2">APIs em 69 hospitais</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">3. Governança — Princípios OMS</h3>
+                    <div class="grid md:grid-cols-2 gap-3">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">🧠 Autonomia humana</p>
+                            <p class="text-xs text-gray-600">"IA apoia, médico decide."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">🛡️ Segurança</p>
+                            <p class="text-xs text-gray-600">"Validação clínica rigorosa."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">🔍 Transparência</p>
+                            <p class="text-xs text-gray-600">"Algoritmos explicáveis."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">⚖️ Responsabilização</p>
+                            <p class="text-xs text-gray-600">"Responsabilidade fim-a-fim."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">🤝 Inclusão</p>
+                            <p class="text-xs text-gray-600">"Modelos com dados brasileiros."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-medium text-gray-800 text-sm">💰 Sustentabilidade</p>
+                            <p class="text-xs text-gray-600">"IA é investimento com ROI."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 4 -->
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">4. Financiamento Sustentável</h3>
+                    <div class="quote p-4 rounded-r-lg italic text-gray-700">
+                        "O debate sobre IA em saúde frequentemente se perde entre utopia e distopia. A pergunta certa é: como IA gera valor mensurável? Na Rede D'Or, medimos três coisas: redução de custos operacionais, melhora de desfechos clínicos e satisfação do paciente."
+                    </div>
+                    <div class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-2 text-center">
+                        <div class="bg-red-50 p-2 rounded">
+                            <p class="text-lg font-bold text-red-600">~85%</p>
+                            <p class="text-xs text-gray-500">sinistralidade</p>
+                        </div>
+                        <div class="bg-red-50 p-2 rounded">
+                            <p class="text-lg font-bold text-red-600">R$28bi</p>
+                            <p class="text-xs text-gray-500">fraudes/ano</p>
+                        </div>
+                        <div class="bg-green-50 p-2 rounded">
+                            <p class="text-lg font-bold text-green-600">10-15%</p>
+                            <p class="text-xs text-gray-500">redução custos IA</p>
+                        </div>
+                        <div class="bg-green-50 p-2 rounded">
+                            <p class="text-lg font-bold text-green-600">+17%</p>
+                            <p class="text-xs text-gray-500">ranking ANS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 5 -->
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">5. Parceria Público-Privada</h3>
+                    <div class="p-4 bg-green-50 rounded-lg border border-green-100">
+                        <p class="font-medium text-green-800 mb-2">Programa "Agora Tem Especialistas"</p>
+                        <ul class="text-sm text-green-700 space-y-1">
+                            <li>✓ Rede D'Or aderiu ao programa</li>
+                            <li>✓ R$ 200M em atendimentos ao SUS</li>
+                            <li>✓ 40 hospitais privados em 13 estados</li>
+                            <li>✓ 85 mil procedimentos potenciais</li>
+                        </ul>
+                    </div>
+                    <div class="quote p-4 rounded-r-lg italic text-gray-700 mt-3">
+                        "A complementaridade entre público e privado não é apenas desejável — é inevitável. O SUS atende 150 milhões de brasileiros, mas não consegue sozinho. A IA pode ser a ponte."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perguntas Difíceis -->
+        <section class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">⚠️ Perguntas Difíceis</h2>
+            <div class="space-y-4">
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                    <p class="font-medium text-gray-800 mb-2">"IA não vai aumentar desigualdades?"</p>
+                    <p class="text-sm text-gray-600">R: "Esse é um risco real se não houver intencionalidade. Por isso treinamos nossos modelos com dados brasileiros. Por isso participamos do programa Agora Tem Especialistas. A IA pode democratizar — mas só se for desenhada para isso."</p>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                    <p class="font-medium text-gray-800 mb-2">"Como garantir que algoritmos não perpetuem vieses?"</p>
+                    <p class="text-sm text-gray-600">R: "Transparência e validação. Publicamos métricas. Temos comitês de ética revisando implementações. E mantemos o médico como decisor final."</p>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                    <p class="font-medium text-gray-800 mb-2">"O modelo verticalizado não cria conflitos de interesse?"</p>
+                    <p class="text-sm text-gray-600">R: "Ao contrário. Quando você opera hospital e operadora, seu incentivo é o melhor desfecho com menor custo. Não ganhamos mais por fazer mais procedimentos — ganhamos por manter o paciente saudável."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagem Central -->
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl shadow-lg p-6 mb-6 text-white">
+            <h2 class="text-lg font-bold mb-3">🎯 Mensagem Central</h2>
+            <p class="text-xl italic">"A Rede D'Or está provando que IA em saúde não é questão de tecnologia — é questão de governança, integração e coragem para escalar."</p>
+        </section>
+
+        <!-- Dados de Bolso -->
+        <section class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">📊 Dados de Bolso</h2>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Beneficiários saúde suplementar BR</span>
+                    <span class="font-bold">53,2M</span>
+                </div>
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Crescimento a.a.</span>
+                    <span class="font-bold">+2,2%</span>
+                </div>
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Processos judiciais/ano</span>
+                    <span class="font-bold">460 mil</span>
+                </div>
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Fraudes no setor</span>
+                    <span class="font-bold">R$ 28 bi/ano</span>
+                </div>
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Adoção IA empresas BR (2025)</span>
+                    <span class="font-bold">51%</span>
+                </div>
+                <div class="flex justify-between p-2 bg-gray-50 rounded">
+                    <span class="text-gray-600">Profissionais otimistas com IA</span>
+                    <span class="font-bold">85%</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-4 px-4 mt-8">
+        <div class="max-w-4xl mx-auto text-center text-sm">
+            <p>🐺 Preparado por Lobo AI | 20/02/2026</p>
+        </div>
+    </footer>
+</body>
+</html>
